@@ -149,7 +149,7 @@ public class BulletHellManager : Singleton<BulletHellManager>
     public void SpawnBulletPattern()
     {
         BulletHellProjectile[] newBullets =
-            patternGenerator.GeneratePattern(bulletOrigin.position, bulletCount, bulletSpeed);
+            patternGenerator.GeneratePattern(Vector3.zero, bulletCount, bulletSpeed);
 
         foreach (BulletHellProjectile projectile in newBullets)
         {
